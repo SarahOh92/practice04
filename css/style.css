@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.header_top{height: 64px;display: flex;justify-content: space-between;width: 1020px;margin: 0 auto;}
+h1 a{width: 174px;height: 64px;}
+
+.login_area{display: flex; align-items: center;line-height: 64px;}
+.login_area .logout{background: url(../images/logout.jpg) no-repeat; width: 22px;height: 23px; margin-left: 12px; cursor: pointer;}
+
+.header_bottom{background: #1a2c52;}
+.gnb_wrap{display: flex; height: 50px;}
+.gnb_wrap li{width: 140px;}
