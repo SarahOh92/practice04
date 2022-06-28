@@ -19,106 +19,368 @@
         </div>
         <!-- // header_top -->
         <div class="header_bottom">
-            <div class="inner">
-                <ul class="gnb_wrap">
-                    <li>
-                        <a href="#">HOME</a>
-                        <ul class="depth2">
-                            <li><a href="#">Dashboard</a></li>
+            <div id="gnb_tabs" class="gnb_tab">
+                <div class="gnb_list_wrap">
+                    <ul class="gnb_list">
+                        <li><a href="#tabs1" class="btn">HOME</a></li>
+                        <li><a href="#tabs2" class="btn">PROJECT CREATED</a></li>
+                        <li><a href="#tabs3" class="btn">PROJECT PROGRESS</a></li>
+                        <li><a href="#tabs4" class="btn">PROJECT COMPLETED</a></li>
+                        <li><a href="#tabs5" class="btn">REPORT</a></li>
+                        <li><a href="#tabs6" class="btn">MANAGER</a></li>
+                    </ul>
+                </div>
+                <div class="inner gnb_contents_wrap">
+                    <div id="tabs1" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#" >Dashboard</a></li>
                             <li><a href="#">일정</a></li>
                             <li><a href="#">진척율</a></li>
                             <li><a href="#">집행/예산</a></li>
                             <li><a href="#">개인정보</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">PROJECT CREATED</a>
-                        <ul class="depth2">
+                    </div>
+                    <div id="tabs2" class="gnb_cont">
+                        <ul class="depth2" >
                             <li><a href="#">Created 1</a></li>
                             <li><a href="#">Created 2</a></li>
                             <li><a href="#">Created 3</a></li>
                             <li><a href="#">Created 4</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">PROJECT PROGRESS</a>
-                        <ul class="depth2">
+                    </div>
+                    <div id="tabs3" class="gnb_cont">
+                        <ul class="depth2" >
                             <li><a href="#">Progress 1</a></li>
                             <li><a href="#">Progress 2</a></li>
                             <li><a href="#">Progress 3</a></li>
                             <li><a href="#">Progress 4</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">PROJECT COMPLETED</a>
-                        <ul class="depth2">
+                    </div>
+                    <div id="tabs4" class="gnb_cont">
+                        <ul class="depth2" >
                             <li><a href="#">Completed 1</a></li>
                             <li><a href="#">Completed 2</a></li>
                             <li><a href="#">Completed 3</a></li>
                             <li><a href="#">Completed 4</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">REPORT</a>
-                        <ul class="depth2">
+                    </div>
+                    <div id="tabs5" class="gnb_cont">
+                        <ul class="depth2" >
                             <li><a href="#">Report 1</a></li>
                             <li><a href="#">Report 2</a></li>
                             <li><a href="#">Report 3</a></li>
                             <li><a href="#">Report 4</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">MANAGER</a>
-                        <ul class="depth2">
+                    </div>
+                    <div id="tabs6" class="gnb_cont">
+                        <ul class="depth2" >
                             <li><a href="#">Manager 1</a></li>
                             <li><a href="#">Manager 2</a></li>
                             <li><a href="#">Manager 3</a></li>
                             <li><a href="#">Manager 4</a></li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- //header_bottom -->
     </header>
     <!-- // header -->
-    <section>
+    <section class="infosecurity_wrap">
         <h2>정보 보안팀 현황</h2>
         <div class="tabs">
             <input type="radio" name="tabs" id="tabone">
-            <label for="tabone">기안 00</label>
-            <ul class="tab">
-                <li><a href="#">라네즈 웹사이트</a></li>
-                <li><a href="#">IOPE 웹사이트</a></li>
-                <li><a href="#">HERA 웹사이트</a></li>
-                <li><a href="#">마몽드 웹사이트</a></li>
+            <label for="tabone"><span class="sub_tit">기안</span><span class="sub_num">00</span></label>
+            <ul class="tab tab1">
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">라네즈 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts">
+                                <div class="percentage"><span class="big">15</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <div class="percentage secondary"><span class="big">10</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">IOPE 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts">
+                                <div class="percentage"><span class="big">15</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <div class="percentage secondary"><span class="big">10</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">HERA 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts">
+                                <div class="percentage"><span class="big">15</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <div class="percentage secondary"><span class="big">10</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">마몽드 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts">
+                                <div class="percentage"><span class="big">15</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <div class="percentage secondary"><span class="big">10</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
             </ul>
 
-            <input type="radio" name="tabs" id="tabtwo">
-            <label for="tabtwo">수행 05</label>
-            <ul class="tab">
-                <li><a href="#">라네즈 웹사이트 구축</a></li>
-                <li><a href="#">IOPE 웹사이트 구축</a></li>
-                <li><a href="#">HERA 웹사이트 구축</a></li>
-                <li><a href="#">마몽드 웹사이트 구축</a></li>
+            <input type="radio" name="tabs" id="tabtwo" checked>
+            <label for="tabtwo"><span class="sub_tit">수행</span> <span class="sub_num">05</span></label>
+            <ul class="tab tab2">
+                <li>
+                    <a href="#">
+                        <span class="delay">지연</span>
+                        <div class="tabs_tit">라네즈 웹사이트 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts chart1">
+                                <div class="percentage"><span class="big">15</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts chart2">
+                                <div class="percentage secondary"><span class="big">10</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="normal">정상</span>
+                        <div class="tabs_tit">IOPE 웹사이트 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts chart1">
+                                <div class="percentage"><span class="big">20</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts chart2">
+                                <div class="percentage secondary"><span class="big">20</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="normal">정상</span>
+                        <div class="tabs_tit">HERA 웹사이트 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts chart1">
+                                <div class="percentage"><span class="big">50</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts chart2">
+                                <div class="percentage secondary"><span class="big">50</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="normal">정상</span>
+                        <div class="tabs_tit">마몽드 웹사이트 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts chart1">
+                                <div class="percentage"><span class="big">75</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts chart2">
+                                <div class="percentage secondary"><span class="big">75</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary"></div>
+                                        <div class="chart_bar_back"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
             </ul>
 
             <input type="radio" name="tabs" id="tabthree">
-            <label for="tabthree">안정화 15</label>
-            <ul class="tab">
-                <li><a href="#">라네즈 구축</a></li>
-                <li><a href="#">IOPE 구축</a></li>
-                <li><a href="#">HERA 구축</a></li>
-                <li><a href="#">마몽드 구축</a></li>
+            <label for="tabthree"><span class="sub_tit">안정화</span> <span class="sub_num">15</span></label>
+            <ul class="tab tab3">
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">라네즈 웹사이트</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">IOPE 웹사이트</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">HERA 웹사이트</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">마몽드 웹사이트</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
             </ul>
 
             <input type="radio" name="tabs" id="tabfour">
-            <label for="tabfour">완료 15</label>
-            <ul class="tab">
-                <li><a href="#">웹사이트 구축</a></li>
-                <li><a href="#">웹사이트 구축</a></li>
-                <li><a href="#">웹사이트 구축</a></li>
-                <li><a href="#">웹사이트 구축</a></li>
+            <label for="tabfour"><span class="sub_tit">완료</span> <span class="sub_num">15</span></label>
+            <ul class="tab tab4">
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">라네즈</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">IOPE</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">HERA</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="tabs_tit">마몽드</div>
+                        <div class="tabs_cont"></div>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
@@ -132,6 +394,7 @@
         <p>&copy; AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED</p>
     </footer>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/style.js"></script>
 </body>
 </html>

@@ -1,10 +1,61 @@
 @charset "UTF-8";
+header{width: 100%;border-bottom: 1px solid #e6eaed;}
 .header_top{height: 64px;display: flex;justify-content: space-between;width: 1020px;margin: 0 auto;}
 h1 a{width: 174px;height: 64px;}
 
 .login_area{display: flex; align-items: center;line-height: 64px;}
 .login_area .logout{background: url(../images/logout.jpg) no-repeat; width: 22px;height: 23px; margin-left: 12px; cursor: pointer;}
 
-.header_bottom{background: #1a2c52;}
-.gnb_wrap{display: flex; height: 50px;}
-.gnb_wrap li{width: 140px;}
+#gnb_tabs{position: relative;}
+#gnb_tabs .gnb_list_wrap{background: #1a2c52;}
+#gnb_tabs .gnb_list_wrap .gnb_list{overflow: hidden; width: 1020px;margin: 0 auto;}
+.gnb_list{ height: 50px; display: flex;}
+.gnb_list li{width: 160px; text-align:center; overflow: hidden;position: relative;}
+.gnb_list li a{color: #fff; display: block;line-height: 50px; font-size: 14px; letter-spacing: -.54px;padding: 0 10px;}
+.gnb_list li a:hover{background: #4eb9c1;}
+
+.depth2{display: flex; width: 100%;overflow: auto;height: 39px;line-height: 39px;}
+.depth2 li:after{content: '|'; margin: 0 18px 0 15px;}
+.depth2 li a{color: #6a696f;}
+.depth2 li a:hover{color: #4eb9c1; text-decoration: underline;}
+
+.infosecurity_wrap{background: #f3f3f3;}
+.infosecurity_wrap h2{width: 1020px; margin: 0px auto;padding: 30px 0 20px;}
+.infosecurity_wrap .tabs{display: flex;flex-wrap: wrap;width: 1020px;margin: 0 auto;padding-bottom: 18px;}
+
+.tabs label{order: 1;display: block; padding: 20px 21px; margin-right: 0.2rem;cursor: pointer;background: #b6c3cb; font-weight: bold;transition: background ease .2s; color: #fff;position: relative;width: 170px;height: 66px;}
+.tabs label:hover{background: #586f8e; color: #fffd86;}
+.tabs label .sub_tit{font-size: 14px; position: absolute; top: 10px; left: 25px;}
+.tabs label .sub_num{font-size: 28px; position: absolute; left: 105px;}
+.tabs .tab{order: 99; flex-grow: 1; width: 100%;overflow: hidden; display: none; padding: 1rem; background: #586f8e;}
+.tabs input[type="radio"]{display: none;}
+.tabs input[type="radio"]:checked + label{background: #586f8e; color: #fffd86;}
+.tabs input[type="radio"]:checked + label + .tab{display: block;}
+.tabs .tab:after{content: '';display: block; clear: both;}
+.tabs .tab .slick-list .slick-track li.slick-slide {width: 190px;}
+.tabs .tab li{width: 190px; height: 216px; float: left;background: #fff; margin-left: 18px;}
+.tab li a{ display: block; position: relative;}
+.tabs .tab li span.delay{position: absolute; width: 35px;height: 35px;display: inline-block; line-height: 35px;left: 167px;top: -13px; border-radius: 50%; background: #f35a48; color: #fff;font-size: 12px;text-align: center;}
+.tabs .tab li span.normal {position: absolute; width: 35px;height: 35px;display: inline-block; line-height: 35px;left: 167px;top: -13px; border-radius: 50%; background: #4fbac4 ; color: #fff;font-size: 12px;text-align: center;}
+.tab li a .tabs_tit{ display: block; height: 53px;border-bottom: 1px solid #e8e9ed; line-height: 53px;padding-left: 20px;}
+
+.tab li a .tabs_cont{max-width: 190px;padding: 10px 19px;}
+.tabs_cont .charts{width: 100%; display: flex;}
+.tabs_cont .charts .percentage{margin-right: 8px; color: #58708c;}
+.tabs_cont .charts .percentage .big{font-size: 26px;}
+
+.charts .chart_horiz{position: relative; left: 3px;width: 85px; height: 5px;top: 10px; background: #e6eaeb;}
+.charts .chart_horiz .chart_bar{height: 5px;margin-bottom: 10px;background: #586f8e; margin-top: 10px;position: absolute;top: -10px; z-index: 2;}
+.charts .secondary{color: #4eb9c1;}
+.charts .chart_horiz .secondary{background: #4eb9c1;}
+
+.tab2 li:nth-child(1) .chart1 .chart_bar{width: 15%;}
+.tab2 li:nth-child(2) .chart1 .chart_bar{width: 20%;}
+.tab2 li:nth-child(3) .chart1 .chart_bar{width: 50%;}
+.tab2 li:nth-child(4) .chart1 .chart_bar{width: 75%;}
+.tab2 li:nth-child(1) .chart2 .chart_bar{width: 10%;}
+.tab2 li:nth-child(2) .chart2 .chart_bar{width: 20%;}
+.tab2 li:nth-child(3) .chart2 .chart_bar{width: 50%;}
+.tab2 li:nth-child(4) .chart2 .chart_bar{width: 75%;}
+
+.tabs_cont .term{font-size: 12px; color: #818085; padding-top: 29px;}
