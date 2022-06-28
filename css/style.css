@@ -1,7 +1,8 @@
 @charset "UTF-8";
 header{width: 100%;border-bottom: 1px solid #e6eaed;}
-.header_top{height: 64px;display: flex;justify-content: space-between;width: 1020px;margin: 0 auto;}
+.header_top{height: 66px;display: flex;justify-content: space-between;width: 1020px;margin: 0 auto;}
 h1 a{width: 174px;height: 64px;}
+h1 a img{padding: 25px 0;}
 
 .login_area{display: flex; align-items: center;line-height: 64px;}
 .login_area .logout{background: url(../images/logout.jpg) no-repeat; width: 22px;height: 23px; margin-left: 12px; cursor: pointer;}
@@ -12,6 +13,7 @@ h1 a{width: 174px;height: 64px;}
 .gnb_list{ height: 50px; display: flex;}
 .gnb_list li{width: 160px; text-align:center; overflow: hidden;position: relative;}
 .gnb_list li a{color: #fff; display: block;line-height: 50px; font-size: 14px; letter-spacing: -.54px;padding: 0 10px;}
+.gnb_list li a.on{background: #4eb9c1;}
 .gnb_list li a:hover{background: #4eb9c1;}
 
 .depth2{display: flex; width: 100%;overflow: auto;height: 39px;line-height: 39px;}
@@ -20,11 +22,11 @@ h1 a{width: 174px;height: 64px;}
 .depth2 li a:hover{color: #4eb9c1; text-decoration: underline;}
 
 .infosecurity_wrap{background: #f3f3f3;}
-.infosecurity_wrap h2{width: 1020px; margin: 0px auto;padding: 30px 0 20px;}
+.infosecurity_wrap h2{width: 1020px; margin: 0px auto;padding: 30px 0 20px; font-size: 24px;}
 .infosecurity_wrap .tabs{display: flex;flex-wrap: wrap;width: 1020px;margin: 0 auto;padding-bottom: 18px;}
 
 .tabs label{order: 1;display: block; padding: 20px 21px; margin-right: 0.2rem;cursor: pointer;background: #b6c3cb; font-weight: bold;transition: background ease .2s; color: #fff;position: relative;width: 170px;height: 66px;}
-.tabs label:hover{background: #586f8e; color: #fffd86;}
+.tabs label:hover{background: rgba(88, 111, 142,.8); color: #fffd86;}
 .tabs label .sub_tit{font-size: 14px; position: absolute; top: 10px; left: 25px;}
 .tabs label .sub_num{font-size: 28px; position: absolute; left: 105px;}
 .tabs .tab{order: 99; flex-grow: 1; width: 100%;overflow: hidden; display: none; padding: 1rem; background: #586f8e;}
@@ -48,14 +50,5 @@ h1 a{width: 174px;height: 64px;}
 .charts .chart_horiz .chart_bar{height: 5px;margin-bottom: 10px;background: #586f8e; margin-top: 10px;position: absolute;top: -10px; z-index: 2;}
 .charts .secondary{color: #4eb9c1;}
 .charts .chart_horiz .secondary{background: #4eb9c1;}
-
-.tab2 li:nth-child(1) .chart1 .chart_bar{width: 15%;}
-.tab2 li:nth-child(2) .chart1 .chart_bar{width: 20%;}
-.tab2 li:nth-child(3) .chart1 .chart_bar{width: 50%;}
-.tab2 li:nth-child(4) .chart1 .chart_bar{width: 75%;}
-.tab2 li:nth-child(1) .chart2 .chart_bar{width: 10%;}
-.tab2 li:nth-child(2) .chart2 .chart_bar{width: 20%;}
-.tab2 li:nth-child(3) .chart2 .chart_bar{width: 50%;}
-.tab2 li:nth-child(4) .chart2 .chart_bar{width: 75%;}
 
 .tabs_cont .term{font-size: 12px; color: #818085; padding-top: 29px;}
