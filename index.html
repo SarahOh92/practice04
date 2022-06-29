@@ -209,9 +209,10 @@
             <input type="radio" name="tabs" id="tabtwo" checked>
             <label for="tabtwo"><span class="sub_tit">수행</span> <span class="sub_num">05</span></label>
             <ul class="tab tab2">
+                <li class="prev"></li>
                 <li>
                     <a href="#">
-                        <span class="delay">지연</span>
+                        <span class="delay state">지연</span>
                         <div class="tabs_tit">라네즈 웹사이트 구축</div>
                         <div class="tabs_cont">
                             <div class="charts chart1">
@@ -238,7 +239,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="normal">정상</span>
+                        <span class="normal state">정상</span>
                         <div class="tabs_tit">IOPE 웹사이트 구축</div>
                         <div class="tabs_cont">
                             <div class="charts chart1">
@@ -265,7 +266,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="normal">정상</span>
+                        <span class="normal state">정상</span>
                         <div class="tabs_tit">HERA 웹사이트 구축</div>
                         <div class="tabs_cont">
                             <div class="charts chart1">
@@ -292,7 +293,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="normal">정상</span>
+                        <span class="normal state">정상</span>
                         <div class="tabs_tit">마몽드 웹사이트 구축</div>
                         <div class="tabs_cont">
                             <div class="charts chart1">
@@ -317,6 +318,35 @@
                         </div>
                     </a>
                 </li>
+                <li class="next"></li>
+                <li>
+                    <a href="#">
+                        <span class="normal state ">정상</span>
+                        <div class="tabs_tit">마몽드 웹사이트 구축</div>
+                        <div class="tabs_cont">
+                            <div class="charts chart1">
+                                <div class="percentage"><span class="big">75</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">목표율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="charts chart2">
+                                <div class="percentage secondary"><span class="big">75</span>%</div>
+                                <div class="left">
+                                    <span class="chart_label">진척율</span>
+                                    <div class="chart_horiz">
+                                        <div class="chart_bar secondary" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="term">2013/01/01 ~ 2013/05/31</div>
+                        </div>
+                    </a>
+                </li>
+                
             </ul>
 
             <input type="radio" name="tabs" id="tabthree">
@@ -378,17 +408,104 @@
             </ul>
         </div>
     </section>
-    <section>
-        <h3>2016년 상반기 예싼 집행 현황</h3>
-        <div class="chart"></div>
-        <div class="chart2"></div>
-        <div class="chart3"></div>
+    <section class="first_half_year">
+        <div class="inner">
+            <h3>2016년 상반기 예산 집행 현황</h3>
+            <div class="chart_wrap">
+                <div class="budget_wrap" onclick=mc(event,this)>
+                    <p>단위: 천원</p>
+                    <div id=lchart style="background:#fff;width:457px;height:275px"></div>
+                </div> 
+                <div class="used_wrap">
+                    <div class="graphic">
+                        <div class="total">
+                            <div class="text">
+                                <p>전체예산</p>
+                                <p class="num">2,600,000</p>
+                            </div>
+                        </div>
+                        <div class="used">
+                            <div class="text">
+                                <p>소진예산</p>
+                                <p class="num">1,300,000</p>
+                                <p class="big">50<span class="small">%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="remaining_wrap">
+                    <h4>잔여예산</h4>
+                    <ul>
+                        <li>
+                            <div class="month">2016.06</div>
+                            <div class="remain_budget">13,000,000</div> 
+                        </li>
+                        <li>
+                            <div class="month">2016.05</div>
+                            <div class="remain_budget">16,000,000</div>
+                        </li>
+                        <li>
+                            <div class="month">2016.04</div>
+                            <div class="remain_budget">17,000,000</div>
+                        </li>
+                        <li>
+                            <div class="month">2016.03</div>
+                            <div class="remain_budget">21,000,000</div>
+                        </li>
+                        <li>
+                            <div class="month">2016.02</div>
+                            <div class="remain_budget">23,000,000</div>
+                        </li>
+                        <li>
+                            <div class="month">2016.01</div>
+                            <div class="remain_budget">23,000,000</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <p>&copy; AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED</p>
+        <div class="inner">
+            <p>&copy; AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED</p>
+        </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/amcharts.js"></script>
+    <script src="js/serial.js"></script>
     <script src="js/style.js"></script>
+    <script>
+        onload=function(){
+        };
+        var m3=[
+            {m:"01월",v:300000}
+            ,{m:"02월",v:0}
+            ,{m:"03월",v:200000}
+            ,{m:"04월",v:400000}
+            ,{m:"05월",v:100000}
+            ,{m:"06월",v:300000}
+        ],chart3=AmCharts.makeChart("lchart", {
+            type:'serial',
+            startDuration:1,
+            color:'#888',
+            colors:['#F79185'],
+            dataProvider:m3,
+            dataDateFormat:'MM',
+            categoryField:'m',
+            graphs:[
+                {valueField:'v',labelText:'[[value]]',bullet:'round',bulletBorderAlpha:1,bulletColor:'#FFF',bulletSize:10,useLineColorForBulletBorder:true,balloonText:"[[category]]월 : [[value]]"}
+            ],
+            chartCursor:{categoryBalloonDateFormat:'MM',cursorColor:'#F79185'},
+            valueAxes:[{axisAlpha:0,gridAlpha:.05,labelsEnabled:false}],
+            categoryAxis:{axisAlpha:0,gridAlpha:0}
+        }),menu=function(o,n,c){
+            o.className='';
+            n.className=c;
+        },mc=function(e,el){
+            if(e.clientY<40)location='mtodo.htm';
+            else if(e.clientY<100)menu(el,el.nextSibling,'on2')
+        };
+    </script>
 </body>
 </html>
