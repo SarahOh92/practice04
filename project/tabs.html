@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabs</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <h1><a href="index.html"><img src="../images/logo.png" alt="아모레퍼시픽"></a></h1>
+            <div class="login_area">
+                <div class="name">박보영 PM</div>
+                <div class="logout"></div>
+            </div>
+        </div>
+        <!-- // header_top -->
+        <div class="header_bottom">
+            <div id="gnb_tabs" class="gnb_tab">
+                <div class="gnb_list_wrap">
+                    <ul class="gnb_list">
+                        <li><a href="#tabs1" class="btn on">HOME</a></li>
+                        <li><a href="#tabs2" class="btn">PROJECT CREATED</a></li>
+                        <li><a href="#tabs3" class="btn">PROJECT PROGRESS</a></li>
+                        <li><a href="#tabs4" class="btn">PROJECT COMPLETED</a></li>
+                        <li><a href="#tabs5" class="btn">REPORT</a></li>
+                        <li><a href="#tabs6" class="btn">MANAGER</a></li>
+                    </ul>
+                </div>
+                <div class="inner gnb_contents_wrap">
+                    <div id="tabs1" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#" >Dashboard</a></li>
+                            <li><a href="#">일정</a></li>
+                            <li><a href="#">진척율</a></li>
+                            <li><a href="#">집행/예산</a></li>
+                            <li><a href="#">개인정보</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs2" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#">Created 1</a></li>
+                            <li><a href="#">Created 2</a></li>
+                            <li><a href="#">Created 3</a></li>
+                            <li><a href="#">Created 4</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs3" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#">Progress 1</a></li>
+                            <li><a href="#">Progress 2</a></li>
+                            <li><a href="#">Progress 3</a></li>
+                            <li><a href="#">Progress 4</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs4" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#">Completed 1</a></li>
+                            <li><a href="#">Completed 2</a></li>
+                            <li><a href="#">Completed 3</a></li>
+                            <li><a href="#">Completed 4</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs5" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#">Report 1</a></li>
+                            <li><a href="#">Report 2</a></li>
+                            <li><a href="#">Report 3</a></li>
+                            <li><a href="#">Report 4</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabs6" class="gnb_cont">
+                        <ul class="depth2" >
+                            <li><a href="#">Manager 1</a></li>
+                            <li><a href="#">Manager 2</a></li>
+                            <li><a href="#">Manager 3</a></li>
+                            <li><a href="#">Manager 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //header_bottom -->
+    </header>
+    <section class="main_project">
+        <div class="inner">
+            <h2>프로젝트 현황</h2>
+            <div class="project_area">
+                <div class="project_name">
+                    <span class="tit">프로젝트명</span>
+                    <span class="content">라네즈 웹사이트 구축</span>
+                </div>
+                <div class="ptb">
+                    <span class="tit">PM</span>
+                    <span class="content">이승훈</span>
+                </div>
+                <div class="budget">
+                    <span class="tit">예산</span>
+                    <span class="content">200,000,000</span>
+                </div>
+                <div class="term">
+                    <span class="tit">기간</span>
+                    <span class="content">2016/01/01 ~ 2013/05/31</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="today_state_wrap">
+        <div class="inner">
+            <div class="state_top">
+                <h3>2016년 1월 12일 프로젝트 현황</h3>
+                <div class="btns">
+                    <div class="download">Excel Download</div>
+                    <div class="update">Update</div>
+                </div>
+            </div>
+            <div class="state_bottom tabs">
+                <input type="radio" name="tabs" id="tabone">
+                <label for="tabone">Week</label>
+                <table class="tab">
+                    <tr>
+                        <th rowspan="2">Overall</th>
+                        <th rowspan="2">Activity</th>
+                        <th rowspan="2">Manager</th>
+                        <th colspan="20">2016.01</th>
+                        <th rowspan="2">Delay</th>
+                        <th rowspan="2">Conform</th>
+                        <th rowspan="2">Outputs</th>
+                    </tr>
+                    <tr>
+                        <th colspan="5">W1</th>
+                        <th colspan="5">W2</th>
+                        <th colspan="5">W3</th>
+                        <th colspan="5">W4</th>
+                    </tr>
+                    <!-- ========== // 첫번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">착수</td>
+                        <td class="activity">기본 시스템 분석</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                    <!-- ========== // 두번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">상세 요구사항 분석 및 조정</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 세번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">UI 프로토타입 네이게이션 정의</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 네번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">개발 요구사항 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="red">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 다섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">범위정의 및 이슈 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="gray">W1</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">DB 설계</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 일곱번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">디자인 요구사항 분석</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여덟번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">디자인 시안 작성</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                </table>
+
+                <input type="radio" name="tabs" id="tabtwo" checked>
+                <label for="tabtwo">1 Month</label>
+                <table class="tab">
+                    <tr>
+                        <th rowspan="2">Overall</th>
+                        <th rowspan="2">Activity</th>
+                        <th rowspan="2">Manager</th>
+                        <th colspan="20">2016.01</th>
+                        <th rowspan="2">Delay</th>
+                        <th rowspan="2">Conform</th>
+                        <th rowspan="2">Outputs</th>
+                    </tr>
+                    <tr>
+                        <th colspan="5">W1</th>
+                        <th colspan="5">W2</th>
+                        <th colspan="5">W3</th>
+                        <th colspan="5">W4</th>
+                    </tr>
+                    <!-- ========== // 첫번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">착수</td>
+                        <td class="activity">기본 시스템 분석</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                    <!-- ========== // 두번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">상세 요구사항 분석 및 조정</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 세번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">UI 프로토타입 네이게이션 정의</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 네번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">개발 요구사항 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="red">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 다섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">범위정의 및 이슈 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="gray">W1</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">DB 설계</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 일곱번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">디자인 요구사항 분석</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여덟번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">디자인 시안 작성</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                </table>
+
+                <input type="radio" name="tabs" id="tabthree">
+                <label for="tabthree">6 Month</label>
+                <table class="tab">
+                    <tr>
+                        <th rowspan="2">Overall</th>
+                        <th rowspan="2">Activity</th>
+                        <th rowspan="2">Manager</th>
+                        <th colspan="20">2016.01</th>
+                        <th rowspan="2">Delay</th>
+                        <th rowspan="2">Conform</th>
+                        <th rowspan="2">Outputs</th>
+                    </tr>
+                    <tr>
+                        <th colspan="5">W1</th>
+                        <th colspan="5">W2</th>
+                        <th colspan="5">W3</th>
+                        <th colspan="5">W4</th>
+                    </tr>
+                    <!-- ========== // 첫번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">착수</td>
+                        <td class="activity">기본 시스템 분석</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                    <!-- ========== // 두번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">상세 요구사항 분석 및 조정</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"><div class="primary">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 세번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">UI 프로토타입 네이게이션 정의</td>
+                        <td class="manager">김미정</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 네번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">개발 요구사항 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="secondary">W1</div></td>
+                        <td class="w1"><div class="red">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">승인</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 다섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">범위정의 및 이슈 분석</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="gray">W1</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여섯번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">DB 설계</td>
+                        <td class="manager">이광수</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="w4"><div class="gray">W4</div></td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs">
+                            <div class="output_btn"></div>
+                        </td>
+                    </tr>
+                    <!-- ========== // 일곱번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">분석</td>
+                        <td class="activity">디자인 요구사항 분석</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w1"><div class="primary">W1</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"><div class="red">W2</div></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w2"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w3"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="w4"></td>
+                        <td class="delay">+2</td>
+                        <td class="conform">
+                            <div class="confirm_btn">
+                                <div class="ok_btn">승인</div>
+                                <div class="reject_btn">반려</div>
+                            </div>
+                        </td>
+                        <td class="outputs">-</td>
+                    </tr>
+                    <!-- ========== // 여덟번째 줄 =========== -->
+                    <tr>
+                        <td class="overall">설계</td>
+                        <td class="activity">디자인 시안 작성</td>
+                        <td class="manager">박성진</td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w1"></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w2"><div class="gray">W2</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3"><div class="gray">W3</div></td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w3">3</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="w4">4</td>
+                        <td class="delay">0</td>
+                        <td class="conform">예정</td>
+                        <td class="outputs"><div class="output_btn"></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="project_board_wrap">
+        <div class="inner">
+            <div class="progress_wrap">
+                <h3>진척 현황</h3>
+                <div class="progress_chart"></div>
+            </div>
+            <div class="personnel_wrap">
+                <div class="personnel_top">
+                    <h3>인력현황</h3>
+                    <div class="more">
+                        <a href="#">
+                            <span>더보기</span>
+                            <span class="more_btn"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="runout_rate_wrap">
+                    <div class="runout_mm">
+                        <p>소진 MM</p>
+                        <p>2 / 20 <span class="small">MM</span></p>
+                    </div>
+                    <div class="runout_rate">
+                        <p>소진율</p>
+                        <p>10 <span class="small">%</span></p>
+                    </div>
+                </div>
+                <div class="personnel_rate">
+                    <table>
+                        <tr>
+                            <th>직책</th>
+                            <th>소속</th>
+                            <th>이름</th>
+                            <th>목표/진척율</th>
+                        </tr>
+                        <tr>
+                            <td>기획PL</td>
+                            <td>BPNR</td>
+                            <td>김미정</td>
+                            <td>50% / <span>50%</span></td>
+                        </tr>
+                        <tr>
+                            <td>디자인PL</td>
+                            <td>BPNR</td>
+                            <td>이광스</td>
+                            <td>50% / <span class="secondary_f">60%</span></td>
+                        </tr>
+                        <tr>
+                            <td>개발PL</td>
+                            <td>BPNR</td>
+                            <td>이광수</td>
+                            <td>50% / <span>30%</span></td>
+                        </tr>
+                        <tr>
+                            <td>기획1</td>
+                            <td>펜타브리드</td>
+                            <td>김철수</td>
+                            <td>20% / <span>20%</span></td>
+                        </tr>
+                        <tr>
+                            <td>기획2</td>
+                            <td>펜타브리드</td>
+                            <td>김영희</td>
+                            <td>10% / <span>10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>디자인</td>
+                            <td>프리랜서</td>
+                            <td>이준수</td>
+                            <td>10% / <span>0%</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="budget_wrap">
+                <div class="budget_top">
+                    <h3>예산현황</h3>
+                    <div class="more">
+                        <a href="#">
+                            <span>더보기</span>
+                            <span class="more_btn"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="budget_used">
+                    <p>단위 : 천원</p>
+                    <div class="line_chart">
+                        <span>전체예산</span>
+                        <div class="line_wrap">
+                            <div class="chart_bar"></div>
+                        </div>
+                        <span>200,000</span>
+                    </div>
+                    <div class="line_chart">
+                        <span>소진예산</span>
+                        <div class="line_wrap">
+                            <div class="chart_bar"></div>
+                        </div>
+                        <span>20,000</span>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>지출일</th>
+                        <th>내용</th>
+                        <th>받는분</th>
+                        <th>금액</th>
+                        <th>상태</th>
+                    </tr>
+                    <tr>
+                        <td>16.01.01</td>
+                        <td>계약금</td>
+                        <td>BPNR</td>
+                        <td>10,000,000</td>
+                        <td>입금완료</td>
+                    </tr>
+                    <tr>
+                        <td>16.01.01</td>
+                        <td>계약금</td>
+                        <td>펜타브리드</td>
+                        <td>10,000,000</td>
+                        <td>입금완료</td>
+                    </tr>
+                    <tr>
+                        <td>16.02.01</td>
+                        <td>1월 급여</td>
+                        <td>프리랜서</td>
+                        <td>5,000,000</td>
+                        <td>입금예정</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <p>&copy; AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED</p>
+        </div>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="../js/style.js"></script>
+</body>
+</html>
