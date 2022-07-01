@@ -40,17 +40,38 @@ section{background: #f3f3f3;}
 .main_project .project_area .term{width: 268px;}
 
 .today_state_wrap .state_top{display: flex;justify-content: space-between;}
-.today_state_wrap .state_top h3{font-size: 16px; color: #2a2a2c;}
-.today_state_wrap .state_top .btns {cursor: pointer;display: flex;height: 30px; font-size: 12px;text-align: center;line-height: 30px;}
-.today_state_wrap .state_top .btns:before{content: '|';width: 1px;height: 30px;color: #dfdfdf;display: inline-block;margin-right: 14px;}
-.today_state_wrap .state_top .btns .download{border:1px solid #c9cacc;width: 112px;color: #636e82;margin-right: 4px;}
-.today_state_wrap .state_top .btns .update{width: 64px; color: #fff;background: #4eb9c1;}
+.state_top h3{font-size: 16px; color: #2a2a2c;}
+.state_top .state_right{display: flex;}
+.state_top .terms_btn{display: flex;}
+.state_top .terms_btn .t_btn{width: 74px; height: 30px;cursor: pointer; margin-right: 1px;color: #fff;text-align: center; line-height: 30px; font-size: 12px;}
+.state_top .terms_btn .week{background: #57718a; }
+.state_top .terms_btn .month1{background: #b5bfcb;}
+.state_top .terms_btn .month6{background: #b5bfcb;}
+.state_top .btns {cursor: pointer;display: flex;height: 30px; font-size: 12px;text-align: center;line-height: 30px;}
+.state_top .btns:before{content: '|';width: 1px;height: 30px;color: #dfdfdf;display: inline-block;margin:0 14px;}
+.state_top .btns .download{border:1px solid #c9cacc;width: 112px;color: #636e82;margin-right: 4px;}
+.state_top .btns .update{width: 64px; color: #fff;background: #4eb9c1;}
 
-.today_state_wrap .state_bottom{margin-top: 10px;}
-
-table, tr, td,th{border: 1px solid #a4a4a6;}
 table{border-collapse: collapse;}
 
+.today_state_wrap .state_bottom{margin-top: 10px;}
+.state_bottom table{border-top: 1px solid #2b2c30; border-bottom: 1px solid #2b2c30;font-size: 12px; width: 100%;text-align: center;table-layout: fixed;}
+.state_bottom table th{ color: #414a51; border: 1px solid;height: 30px; background: #e2e7ea;vertical-align: middle;}
+.state_bottom table td{position:relative;height:40px;line-height: 40px;border: 1px solid #d6dde3;}
+.state_bottom table td .w1, .w2, .w3, .w4{width: 21px;}
+.state_bottom table td>div{position:absolute;top:50%;left:0;right:-1px;margin-top:-4px; height: 8px;z-index: 50;}
+.gray{background: #d6dde3;}
+.primary_bg{background: #567095;}
+.state_bottom table .overall{border-left: none;}
+.state_bottom table .outputs{border-right: none;}
+.state_bottom table .confirm_btn{display: flex;justify-content: center;align-items: center;}
+.state_bottom table .confirm_btn>div{width: 43px;height: 24px; color: #fff;line-height: 24px;cursor: pointer;}
+.state_bottom table .confirm_btn .ok_btn{background: #5b6e8f; margin-right: 4px;} 
+.state_bottom table .confirm_btn .reject_btn{background: #f69189;}
+.state_bottom table .output_btn{background: url(../images/output.jpg) no-repeat;width: 24px;height: 24px; display: inline-block;vertical-align: middle;cursor: pointer;position: unset;}
+.state_bottom table .output_btn:hover{background: url(../images/output_hover.jpg) no-repeat;}
+.red{background: #f89286;}
+.secondary{background: #4ab9c0;}
 /* footer */
 footer{height: 87px;background: #f3f3f3;width: 100%; text-align: center;}
 footer p{line-height: 87px; font-size: 10px;color: #a4a4a6;}
