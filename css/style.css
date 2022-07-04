@@ -98,7 +98,7 @@ h1 a img{padding: 25px 0;}
 .first_half_year .used_wrap .used .text{color: #fff; margin-top: 30px;}
 .first_half_year .used_wrap .total .text p, .first_half_year .used_wrap .used p{text-overflow: ellipsis; overflow: hidden;white-space: nowrap; width: 100px;margin: 0 auto;}
 .first_half_year .used_wrap .used .text .num{margin-top: -6px;}
-.first_half_year .used_wrap .used p.big{font-size: 28px; margin-top: 4px; margin-left: 2px;}
+.first_half_year .used_wrap .used p.big{font-size: 28px; margin-top: 4px; margin-left: 21px;text-align: center;}
 .first_half_year .used_wrap .used p.big .small{font-size: 20px;}
 
 /* remaining_wrap */
