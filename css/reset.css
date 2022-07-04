@@ -92,3 +92,9 @@ button, input, pre, select, textarea {
 .flex{
     display: flex;
 }
+.primary_bg{background: #567095;}
+.secondary_bg{background: #4ab9c0;}
+.red_bg{background: #f89286;}
+.gray_bg{background: #d6dde3;}
+.primary_color{color: #567095;}
+.red_color{color: #df6244;}
