@@ -86,10 +86,11 @@ h1 a img{padding: 25px 0;}
 .first_half_year .used_wrap .graphic{margin-left: 21px; height: 128px;}
 .first_half_year .used_wrap .graphic .text{font-size: 12px; font-weight: 600;text-align: center;margin: 0 auto;}
 .first_half_year .used_wrap .graphic .text .num{font-size: 18px; font-weight: 400;margin-top: -3px;}
-.first_half_year .used_wrap .total{width: 135px; height: 246px;margin: 3px 0 0 21px; background: url(../images/dot_pattern.jpg);position: relative; border: 1px solid #d6dfe6;}
+.first_half_year .used_wrap .total{width: 135px; height: 246px;margin: 3px 0 0 18px; background: url(../images/dot_pattern.jpg);position: relative; border: 1px solid #d6dfe6;}
 .first_half_year .used_wrap .total .total_cont{margin-top: 26px; color: #57728f;}
+
 /* used */
-.first_half_year .used_wrap .used{width: 125px; background: #f79185;position: absolute;margin: 0 auto;bottom:0;left: 5px;transition: height .5s;}
+.first_half_year .used_wrap .used{width: 125px; background: #f79185;position: absolute;margin: 0 auto;bottom:0;left: 4px;transition: height .5s;}
 .first_half_year .used_wrap .used_cont{color: #fff; margin-top: 30px; position: absolute;bottom: 15px;left: 5px;}
 .first_half_year .used_wrap .total_cont p, .first_half_year .used_wrap .used_cont p{text-overflow: ellipsis; overflow: hidden;white-space: nowrap; width: 100px;margin: 0 auto;text-align: center;}
 .first_half_year .used_wrap .used_cont .text .num{margin-top: -6px;}
