@@ -195,9 +195,10 @@ table{border-collapse: collapse;}
 .runout_rate_wrap>div>.front{width: 25px;display: inline-block;text-align: right;}
 .runout_rate_wrap>div>.back{width: 20px;display: inline-block; text-align: left;}
 .runout_rate_wrap>div> .slash{font-size: 26px;margin-left: 7px;}
-.runout_rate_wrap>div> .small{font-size: 14px;padding-left: 15px;}
+.runout_rate_wrap>div> .small{font-size: 14px;margin-left: 27px;}
 .runout_rate_wrap .runout_rate{width: 82px;text-align: right;}
-.runout_rate_wrap .runout_rate p{color: #fffa8d;}
+.runout_rate_wrap .runout_rate p{color: #fffa8d;font-size: 28px;}
+.runout_rate_wrap .runout_rate p .small{margin-left: 0;}
 
 .personnel_rate table {margin-top: 10px;width: 100%;font-size: 12px;text-align: center;table-layout: fixed;}
 .personnel_rate table tr{height: 30px;line-height: 29px;}
