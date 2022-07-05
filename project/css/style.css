@@ -112,7 +112,7 @@ table{border-collapse: collapse;}
 .runout_rate_wrap>div>p .small{font-size: 14px;}
 .runout_rate_wrap .runout_rate{color: #fffa8d;}
 
-.personnel_rate table {margin-top: 10px;width: 100%;font-size: 12px;text-align: center;}
+.personnel_rate table {margin-top: 10px;width: 100%;font-size: 12px;text-align: center;table-layout: fixed;}
 .personnel_rate table tr{height: 30px;line-height: 29px;}
 .personnel_rate table th{border-top: 1px solid #cdcbcc;border-bottom: 1px solid #cdcbcc;background: #e3e7ea;}
 .personnel_rate table tr td{border-bottom: 1px solid #e7e7e7;}
@@ -137,11 +137,12 @@ table{border-collapse: collapse;}
 .budget_bottom span{color:#eb5e4a;font-size: 30px;font-weight: 600;width: 60px;text-align: right;}
 .budget_bottom span>.small16{font-size: 16px;}
 
-.budget_wrap table{margin-top: 10px; font-size: 12px;width: 100%;text-align: center;}
+.budget_wrap table{margin-top: 10px; font-size: 12px;width: 100%;text-align: center;table-layout: fixed;}
 .budget_wrap table tr{height: 30px; line-height: 30px;}
 .budget_wrap table th{background: #e3e7ea;border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;}
-.budget_wrap table td:nth-child(2){width: 63px;text-align: left;text-overflow: ellipsis; overflow: hidden;white-space: nowrap;}
+.budget_wrap table td:nth-child(2),.budget_wrap table td:nth-child(3){text-align: left;text-overflow: ellipsis; overflow: hidden;white-space: nowrap;}
 .budget_wrap table td{border-bottom: 1px solid #e7e7e7;}
+.budget_wrap table td:nth-child(4){width: 70px;text-align: right;}
 /* footer */
 footer{height: 87px;background: #f3f3f3;width: 100%; text-align: center;}
 footer p{line-height: 87px; font-size: 10px;color: #a4a4a6;}
