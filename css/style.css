@@ -192,8 +192,10 @@ table{border-collapse: collapse;}
 .runout_rate_wrap .runout_mm{color: #fff;}
 .runout_rate_wrap>div>p:nth-child(1){font-size: 12px;}
 .runout_rate_wrap>div>.front,.runout_rate_wrap>div>.back{font-size: 28px;}
+.runout_rate_wrap>div>.front{width: 38px;display: inline-block;text-align: left;}
+.runout_rate_wrap>div>.back{width: 20px;display: inline-block; text-align: right;}
 .runout_rate_wrap>div> .slash{font-size: 26px;}
-.runout_rate_wrap>div> .small{font-size: 14px;}
+.runout_rate_wrap>div> .small{font-size: 14px;padding-left: 15px;}
 .runout_rate_wrap .runout_rate{width: 82px;text-align: right;}
 .runout_rate_wrap .runout_rate p{color: #fffa8d;}
 
