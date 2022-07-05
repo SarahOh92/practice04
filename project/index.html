@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMOREPACIFIC LANEIGE</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div class="header_top">
-            <h1><a href="index.html"><img src="../images/logo.png" alt="아모레퍼시픽"></a></h1>
+            <h1><a href="../index.html"><img src="../images/logo.png" alt="아모레퍼시픽"></a></h1>
             <div class="login_area">
                 <div class="name">박보영 PM</div>
                 <div class="logout"></div>
@@ -116,7 +116,7 @@
                 <h3>2016년 1월 12일 프로젝트 현황</h3>
                 <div class="state_right">
                     <div class="terms_btn">
-                        <div class="week t_btn">Week</div>
+                        <div class="week t_btn is_on">Week</div>
                         <div class="month1 t_btn">1 Month</div>
                         <div class="month6 t_btn">6 Month</div>
                     </div>
@@ -184,7 +184,7 @@
                         <!-- // w1 -->
                         <td><div></div></td>
                         <td><div></div></td>
-                        <td><div></div></td>
+                        <td><div class="today_line"></div></td>
                         <td><div></div></td>
                         <td><div></div></td>
                         <!-- // w2 -->
@@ -450,7 +450,6 @@
                         <td class="outputs"><div class="output_btn"></div></td>
                     </tr>
                 </table>
-                <div class="today_line"></div>
             </div>
         </div>
     </section>
@@ -460,7 +459,7 @@
             <div class="progress_wrap">
                 <h3>진척 현황</h3>
                 <div class="progress_chart">
-                    <svg id="delay" width="300" height="300" viewBox="0 0 100 100">
+                    <svg id="delay" width="300" height="300" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <circle id="c3" r="25" cx="50" cy="50" />
                         <circle id="c2" r="25" cx="50" cy="50" />
                         <circle id="c1" r="25" cx="50" cy="50" />
@@ -483,7 +482,10 @@
                 <div class="runout_rate_wrap">
                     <div class="runout_mm">
                         <p>소진 MM</p>
-                        <p>2 <span class="slash">/</span> 20 <span class="small">MM</span></p>
+                        <span class="front">2</span>
+                        <span class="slash">/</span>
+                        <span class="back">20</span>
+                        <span class="small">MM</span>
                     </div>
                     <div class="runout_rate">
                         <p>소진율</p>
@@ -493,7 +495,7 @@
                 <div class="personnel_rate">
                     <table>
                         <colgroup>
-                            <col />
+                            <col style="width: 67px;"/>
                             <col style="width: 61px;"/>
                             <col />
                             <col />
