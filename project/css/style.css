@@ -110,7 +110,8 @@ table{border-collapse: collapse;}
 .runout_rate_wrap>div>p:nth-child(2){font-size: 28px;}
 .runout_rate_wrap>div>p .slash{font-size: 26px;}
 .runout_rate_wrap>div>p .small{font-size: 14px;}
-.runout_rate_wrap .runout_rate{color: #fffa8d;}
+.runout_rate_wrap .runout_rate{width: 82px;text-align: right;}
+.runout_rate_wrap .runout_rate p{color: #fffa8d;}
 
 .personnel_rate table {margin-top: 10px;width: 100%;font-size: 12px;text-align: center;table-layout: fixed;}
 .personnel_rate table tr{height: 30px;line-height: 29px;}
