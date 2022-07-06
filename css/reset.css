@@ -30,15 +30,8 @@ nav ul, li{
     list-style:none;
 }
     
-a{
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-    text-decoration:none;
-    color: #666;
-}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;color: #666;}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -98,3 +91,6 @@ button, input, pre, select, textarea {
 .gray_bg{background: #d6dde3;}
 .primary_color{color: #567095;}
 .red_color{color: #df6244;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+table{border-collapse: collapse;table-layout: fixed; text-align: center; width: 100%;}
