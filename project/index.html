@@ -463,14 +463,13 @@
             <div class="progress_wrap">
                 <h3>진척 현황</h3>
                 <div class="progress_chart">
-                    <svg id="delay" width="300" height="300" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <circle id="c3" r="25" cx="50" cy="50" />
-                        <circle id="c2" r="25" cx="50" cy="50" />
-                        <circle id="c1" r="25" cx="50" cy="50" />
-                        <text id="text" x="50" y="53" text-anchor="middle">
-                          지연
-                        </text>
-                    </svg>
+                    <div class="pie-charts">
+                        <div class="pieID--operations pie-chart--wrapper">
+                            <div class="pie-chart">
+                                <div class="pie-chart__pie"><div class="slice s0-0" style="transform: rotate(-1deg) translate3d(0px, 0px, 0px);"><span style="transform: rotate(-4.04deg) translate3d(0px, 0px, 0px); background-color: orange;"></span></div><div class="slice s1-0" style="transform: rotate(173.96deg) translate3d(0px, 0px, 0px);"><span style="transform: rotate(-122.84deg) translate3d(0px, 0px, 0px); background-color: tomato;"></span></div><div class="slice s2-0" style="transform: rotate(230.12deg) translate3d(0px, 0px, 0px);"><span style="transform: rotate(-101.6deg) translate3d(0px, 0px, 0px); background-color: navy;"></span></div><div class="slice s3-0" style="transform: rotate(307.52deg) translate3d(0px, 0px, 0px);"><span style="transform: rotate(-127.52deg) translate3d(0px, 0px, 0px); background-color: turquoise;"></span></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="personnel_wrap">
@@ -520,13 +519,13 @@
                                 <td>디자인PL</td>
                                 <td class="text_left">BPNR</td>
                                 <td>이광수</td>
-                                <td>50% / <span class="secondary_f">60%</span></td>
+                                <td>50% / <span class="secondary_color">60%</span></td>
                             </tr>
                             <tr>
                                 <td>개발PL</td>
                                 <td class="text_left">BPNR</td>
                                 <td>이광수</td>
-                                <td>50% / <span>30%</span></td>
+                                <td>50% / <span class="red_color">30%</span></td>
                             </tr>
                             <tr>
                                 <td>기획1</td>
@@ -544,7 +543,7 @@
                                 <td>디자인</td>
                                 <td class="text_left">프리랜서</td>
                                 <td>이준수</td>
-                                <td>10% / <span>0%</span></td>
+                                <td>10% / <span class="red_color">0%</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -627,6 +626,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="inner">
             <p>&copy; AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED</p>
