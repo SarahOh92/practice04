@@ -460,37 +460,12 @@
 
     <section class="project_board_wrap">
         <div class="inner">
-            <div class="progress_wrap">
+            <div class="progress_wrap container_item">
                 <h3 class="sub_title">진척 현황</h3>
-                <div class="progress_chart">
-                    <div class="pie-charts">
-                        <div class="pieID--operations pie-chart--wrapper">
-                            <div class="pie-chart">
-                                <div class="pie-chart__pie">
-                                    <div class="slice s0-0" style="transform: rotate(181deg) translate3d(0px, 0px, 0px);">
-                                        <span style="transform: rotate(0deg) translate3d(0px, 0px, 0px);background-color: #d7dce0;"></span>
-                                    </div>
-                                    <div class="slice s1-0" style="transform: rotate(97.96deg) translate3d(0px, 0px, 0px);">
-                                        <span style="transform: rotate(-441.84deg) translate3d(0px, 0px, 0px);background-color: #d7dce0;"></span>
-                                    </div>
-                                    <div class="slice s2-0" style="transform: rotate(0.12deg) translate3d(0px, 0px, 0px);">
-                                        <span style="transform: rotate(-119.6deg) translate3d(0px, 0px, 0px);background-color: #56718e;"></span>
-                                    </div>
-                                    <div class="slice s3-0" style="transform: rotate(59.52deg) translate3d(0px, 0px, 0px);">
-                                        <span style="transform: rotate(-138.52deg) translate3d(0px, 0px, 0px);background-color: #51b8bd;"></span>
-                                    </div>
-                                </div>
-                                <ul class="pie-chart__legend">
-                                    <li class="primary_color">목표율 15%</li>
-                                    <li class="secondary_color">진척율 10%</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="chartdiv"></div>
             </div>
-            <div class="personnel_wrap">
-                <div class="personnel_top">
+            <div class="personnel_wrap container_item">
+                <div class="sub_top">
                     <h3 class="sub_title">인력현황</h3>
                     <div class="more">
                         <a href="#">
@@ -566,9 +541,9 @@
                     </table>
                 </div>
             </div>
-            <div class="budget_wrap">
-                <div class="budget_top">
-                    <h3 class="sub_title">예산현황</h3>
+            <div class="budget_wrap container_item">
+                <div class="sub_top sub_title">
+                    <h3>예산현황</h3>
                     <div class="more">
                         <a href="#">
                             <span>더보기</span>
@@ -651,6 +626,65 @@
     </footer>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="../js/style.js"></script>
+    <script>
+        am5.ready(function() {
+
+        let chartData = {
+            "지연": [
+                { sector: "목표육", size: 15 },
+                { sector: "진척율", size: 10 },
+                { sector: "그 외", size: 75 }],
+        };
+        
+        let root = am5.Root.new("chartdiv");
+
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+        var chart = root.container.children.push(am5percent.PieChart.new(root, {
+            innerRadius: 100,
+            layout: root.verticalLayout
+        }));
+
+        var series = chart.series.push(am5percent.PieSeries.new(root, {
+            valueField: "size",
+            categoryField: "sector"
+        }));
+
+        series.data.setAll([
+            { sector: "목표육", size: 15 },
+            { sector: "진척율", size: 10 },
+            { sector: "그 외", size: 75 }
+        ]);
+
+        series.appear(1000, 100);
+
+        // Add label
+        let label = root.tooltipContainer.children.push(am5.Label.new(root, {
+            x: am5.p50,
+            y: am5.p50,
+            centerX: am5.p50,
+            centerY: am5.p50,
+            fill: am5.color(0xf35d4c),
+            fontSize: 18
+        }));
+        function loop() {
+          label.set("text", "지연");
+          let data = getCurrentData();
+          for(var i = 0; i < data.length; i++) {
+            series.data.setIndex(i, data[i]);
+          }
+          chart.setTimeout( loop, 4000 );
+        }
+
+        loop();
+
+        }); // end am5.ready()
+    </script>
 </body>
 </html>
