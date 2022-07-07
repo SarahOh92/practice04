@@ -90,15 +90,15 @@ h2{font-size: 24px;}
 /* used */
 .first_half_year .used_wrap .used{width: 125px; background: #f79185;position: absolute;margin: 0 auto;bottom:0;left: 4px;transition: height .5s;}
 .first_half_year .used_wrap .used_cont{color: #fff; margin-top: 30px; position: absolute;bottom: 15px;left: 5px;}
-.first_half_year .used_wrap .total_cont p, .first_half_year .used_wrap .used_cont p{text-overflow: ellipsis; overflow: hidden;white-space: nowrap; width: 100px;margin: 0 auto;text-align: center;}
-.first_half_year .used_wrap .used_cont .text .num{margin-top: -6px;}
+.first_half_year .used_wrap .total p{text-overflow: ellipsis; overflow: hidden;white-space: nowrap; width: 100px;margin: 0 auto;text-align: center;font-size: 12px;}
+.first_half_year .used_wrap .total .num{margin-top: -6px; font-size: 18px;}
 .first_half_year .used_wrap .used_cont p.big{font-size: 28px; margin-top: 4px; margin-left: 15px;text-align: center;}
 .first_half_year .used_wrap .used_cont p.big .small{font-size: 20px;}
 
 /* remaining_wrap */
 .first_half_year .remaining_wrap{width: 250px; height: 285px;margin-right: 0;padding: 0 10px;}
-.first_half_year .remaining_wrap h3{margin-bottom: 5px;}
-.first_half_year .remaining_wrap ul li{width: 230px;height: 34px;display: flex;justify-content: space-between;color: #fff;line-height: 34px;margin-bottom: 5px;padding: 0px 20px;}
+.first_half_year .remaining_wrap ul{margin-top: 14px;}
+.first_half_year .remaining_wrap ul li{width: 230px;height: 34px;display: flex;justify-content: space-between;color: #fff;line-height: 34px;margin-bottom: 3px;padding: 0px 20px;}
 .first_half_year .remaining_wrap ul li:nth-child(1){background: #4eb9c1;}
 .first_half_year .remaining_wrap ul li:nth-child(2){background: #8294aa;}
 .first_half_year .remaining_wrap ul li:nth-child(3){background: #9ca9bc;}
@@ -106,7 +106,7 @@ h2{font-size: 24px;}
 .first_half_year .remaining_wrap ul li:nth-child(5){background: #b9c3cf;}
 .first_half_year .remaining_wrap ul li:nth-child(6){background: #c6ced9;}
 .first_half_year .remaining_wrap ul li .month{font-size: 12px;}
-.first_half_year .remaining_wrap ul li .remain_budget{font-size: 18px; width: 100px; overflow: hidden;text-align: end;text-overflow: ellipsis;white-space: nowrap;}
+.first_half_year .remaining_wrap ul li .remain_budget{font-size: 18px;overflow: hidden;text-align: end;text-overflow: ellipsis;white-space: nowrap;}
 
 /* project.html */
 
@@ -140,8 +140,8 @@ h2{font-size: 24px;}
 .state_top .btns .update:hover{background: #53c6cf;}
 
 .sub_table{font-size: 12px;}
-thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-color: #e3e7ea;}
-.sub_table tbody tr{height: 30px;line-height: 30px;border-bottom: 1px solid #cbcbcd;}
+thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-color: #e3e7ea;height: 30px;line-height: 30px;}
+.sub_table tbody tr td{height: 29px;line-height: 29px;border-bottom: 1px solid #cbcbcd;}
 .sub_table td{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
 .today_state_wrap .main_table{margin-top: 10px;}
@@ -179,6 +179,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 #c2 {fill: none;stroke: #48bebe;stroke-width: 7;stroke-dasharray: 14 158; transform: rotate(-24deg);transform-origin: center;animation: circle-chart-fill 2s;}
 #c3 {fill: none;stroke: #d8dcdf;stroke-width: 7;stroke-dasharray: 158 158; transform: rotate(-90deg);transform-origin: center;animation: circle-chart-fill 2s;}
 #text {font-size: 8px;font-family: 'Nanum Gothic','맑은 고딕','Malgun Gothic', sans-serif; fill: #f35d4c;font-weight: 500;letter-spacing: -.5px;}
+
 @keyframes circle-chart-fill {
   from { 
     stroke-dasharray: 158 158; 
@@ -190,61 +191,27 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-
 @keyframes bake-pie {
   from {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-.pie-chart--wrapper {
-  width: 260px;
-  margin: 30px auto;
-  text-align: center;
-}
-.pie-chart__pie {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  height: 200px;
-  width: 200px;
-  margin: 10px auto 35px;
-}
-.pie-chart__pie::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  background: #EEE;
-  border-radius: 50%;
-  top: 50px;
-  left: 50px;
-}
+.pie-chart--wrapper {width: 260px;margin: 20px auto;text-align: center;}
+.pie-chart__pie {display: inline-block;vertical-align: top;position: relative;height: 200px;width: 200px;margin: 10px auto 5px;}
+.pie-chart__pie::before {content: "지출";display: block;position: absolute;z-index: 1;width: 150px;height: 150px;background: #EEE;color:#f15b40;line-height:150px;border-radius: 50%;top: 25px;left: 25px;}
 @media (max-width: 500px) {
   .pie-charts {
     flex-direction: column;
   }
 }
-.slice {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  clip: rect(0px, 200px, 200px, 100px);
-  -webkit-animation: bake-pie 1s;
-          animation: bake-pie 1s;
-}
-.slice span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  clip: rect(0px, 200px, 200px, 100px);
-}
+.slice {position: absolute;width: 200px;height: 200px;clip: rect(0px, 200px, 200px, 100px);animation: bake-pie 1s;}
+.slice span {display: block;position: absolute;top: 0;left: 0;background-color: black;width: 200px;height: 200px;border-radius: 50%;clip: rect(0px, 200px, 200px, 100px);}
+
+.pie-chart__legend {display: block;list-style-type: none;padding: 0;margin: 0 auto;background: #FFF;padding: 10px 10px;font-size: 13px;text-align: left;width: 65%;}
+.pie-chart__legend li {height: 1.25em;margin-bottom: 0.7em;padding-left: 0.5em;border-left: 16px solid black;}
+.pie-chart__legend li:first-child{border-color: #56718e;}
+.pie-chart__legend li:nth-child(2){border-color: #51b8bd;}
+.pie-chart__legend span {float: right;}
 
 /* personnel_wrap */
 .personnel_wrap{margin-right: 20px;}
