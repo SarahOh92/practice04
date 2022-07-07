@@ -10,6 +10,9 @@ h1 a img{padding: 25px 0;}
 .login_area .logout{background: url(../images/logout.jpg) no-repeat; width: 22px;height: 23px; margin-left: 12px; cursor: pointer; transition: all .3s;}
 .login_area .logout:hover{background: url(../images/logout_hover.jpg) no-repeat;}
 
+.main_title{font-size: 24px;}
+.sub_title{font-size: 16px;color: #2a2a2c;}
+
 /* gnb_area */
 #gnb_tabs{position: relative;}
 #gnb_tabs .gnb_list_wrap{background: #1a2c52;}
@@ -28,7 +31,6 @@ h1 a img{padding: 25px 0;}
 .info_wrap{background: #f3f3f3;}
 .info_wrap h2{width: 1020px; margin: 0px auto;padding: 30px 0 20px;}
 .info_wrap .tabs{display: flex;flex-wrap: wrap;width: 1020px;margin: 0 auto;}
-h2{font-size: 24px;}
 
 /* tabs */
 .tabs_wrapper{padding-bottom: 18px;}
@@ -71,7 +73,7 @@ h2{font-size: 24px;}
 
 .tabs_cont .term{font-size: 12px; color: #818085; padding-top: 18px; letter-spacing: -.5px;text-align: center;}
 
-.first_half_year h3{font-size: 16px; margin: 30px 30px 23px;}
+.first_half_year .sub_title{font-size: 16px; margin: 30px 30px 23px;}
 .first_half_year .chart_wrap{display: flex;}
 .first_half_year .chart_wrap .budget_wrap, .chart_wrap .used_wrap{margin-right: 38px;}
 
@@ -124,7 +126,6 @@ h2{font-size: 24px;}
 
 .today_state_wrap{background: #f3f3f3;}
 .today_state_wrap .state_top{display: flex;justify-content: space-between;}
-.state_top h3{font-size: 16px; color: #2a2a2c;}
 .state_top .state_right{display: flex;}
 .state_top .terms_btn{display: flex;}
 .state_top .terms_btn .t_btn{width: 74px; height: 30px;cursor: pointer; margin-right: 1px;color: #fff;text-align: center; line-height: 30px; font-size: 12px;}
@@ -170,7 +171,6 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 
 .project_board_wrap{padding-top: 56px;background: #f3f3f3;}
 .project_board_wrap>.inner{display: flex;}
-.project_board_wrap h3{font-size: 16px; color: #28272c;}
 
 /* progress_wrap */
 .project_board_wrap .progress_wrap .progress_chart{width: 338px; height: 318px;background: #fff;margin: 12px 20px 0 0;border: 1px solid #e7e7e7;}
@@ -246,7 +246,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 .budget_used .line_chart .line_wrap .chart_bar{position: absolute;height: 8px; z-index: 50;}
 
 .budget_bottom{display: flex;justify-content: space-between;align-items: center;padding: 0 20px;}
-.budget_bottom h3{font-size: 12px;font-weight: 600;}
+.budget_bottom .runout_percentage{font-size: 12px;font-weight: 600;}
 .budget_bottom span{color:#eb5e4a;font-size: 30px;font-weight: 600;width: 60px;text-align: right;}
 .budget_bottom span>.small16{font-size: 16px;}
 
