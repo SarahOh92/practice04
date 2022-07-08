@@ -12,7 +12,7 @@ h1 a img{padding: 25px 0;}
 
 .main_title{font-size: 24px; font-weight: 400;line-height: 24px;}
 .sub_title{font-size: 16px;color: #2a2a2c;line-height: 16px;}
-.sub_top{display: flex;justify-content: space-between;}
+.sub_top{display: flex;justify-content: space-between;height: 30px;}
 
 /* gnb_area */
 #gnb_tabs{position: relative;}
@@ -99,7 +99,7 @@ h1 a img{padding: 25px 0;}
 .first_half_year .used_wrap .used_cont p.big .small{font-size: 20px;}
 
 /* remaining_wrap */
-.first_half_year .remaining_wrap{width: 250px; height: 285px;margin-right: 0;padding: 0 10px;}
+.first_half_year .remaining_wrap{width: 250px; height: 285px;margin-right: 0;padding: 11px 10px;}
 .first_half_year .remaining_wrap ul{margin-top: 14px;}
 .first_half_year .remaining_wrap ul li{width: 230px;height: 34px;display: flex;justify-content: space-between;color: #fff;line-height: 34px;margin-bottom: 3px;padding: 0px 20px;}
 .first_half_year .remaining_wrap ul li:nth-child(1){background: #4eb9c1;}
@@ -146,8 +146,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 .sub_table tbody tr td{height: 29px;line-height: 29px;border-bottom: 1px solid #cbcbcd;}
 .sub_table td{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
-.today_state_wrap .main_table{margin-top: 10px;}
-.main_table table{font-size: 12px; width: 100%;position: relative;}
+.main_table table{font-size: 12px; width: 100%;position: relative;margin-top: 12px;}
 .main_table table thead{border-top: 1px solid #2b2c30; border-bottom: 1px solid #d6d7d9;}
 .main_table table th{color: #414a51; border-right: 1px solid #d0d4d7; height: 30px; background: #e2e7ea;vertical-align: middle;}
 .main_table table th[colspan="20"]{border-bottom: 1px solid #d0d4d7;}
@@ -177,7 +176,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 
 /* progress_wrap */
 .project_board_wrap .progress_wrap .progress_chart{width: 338px; height: 318px;background: #fff;margin: 12px 0px 0 0;border: 1px solid #e7e7e7;}
-#chartdiv {background: #fff;width: 334px;height: 317px;}
+#chartdiv {width: 334px;height: 317px; background: #fff;}
 
 /* personnel_wrap */
 .personnel_wrap .personnel_top{display: flex;justify-content: space-between;}
@@ -185,7 +184,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 .more a{font-size: 12px; color: #7e7e7e;}
 .more a .more_btn{background: url(../images/more.jpg) no-repeat; width: 6px; height: 11px; display: inline-block;vertical-align: middle;}
 
-.personnel_wrap .runout_rate_wrap{width: 279px;height: 95px; background: #586f8e; display: flex;justify-content: space-between;margin-top: 12px;padding: 20px;}
+.personnel_wrap .runout_rate_wrap{width: 279px;height: 95px; background: #586f8e; display: flex;justify-content: space-between;padding: 20px;}
 .runout_rate_wrap .runout_mm{color: #fff;}
 .runout_rate_wrap>div>p:nth-child(1){font-size: 12px;}
 .runout_rate_wrap>div>p:nth-child(2){font-size: 28px;}
@@ -198,7 +197,7 @@ thead{border-top: 1px solid #cbcbcd;border-bottom: 1px solid #cbcbcd;background-
 .personnel_rate{margin-top: 10px;width: 100%;}
 
 /* budget_wrap */
-.budget_used{width: 363px;height: 184px;background: #fff;border: 1px solid #e7e7e7;margin-top: 12px;}
+.budget_used{width: 363px;height: 184px;background: #fff;border: 1px solid #e7e7e7;}
 .budget_used .budget_chart_wrap{border-bottom: 1px solid #efefef;padding-bottom: 10px;}
 .budget_used p{padding: 10px 20px; font-size: 12px; text-align: end;}
 .budget_used .line_chart{display: flex;align-items: center;justify-content: space-between;}
